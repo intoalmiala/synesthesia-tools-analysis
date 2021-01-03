@@ -23,15 +23,15 @@ g = np.zeros(n**3)
 
 # Count distributions in voxels
 for color in set1:
-    x = int(round(color[0]//255))
-    y = int(round(color[1]//255))
-    z = int(round(color[2]//255))
+    x = int(round(color[0]/255))
+    y = int(round(color[1]/255))
+    z = int(round(color[2]/255))
     f[n**2 * x + n * y + z] += 1/len(set1)
 
 for color in set2:
-    x = int(round(color[0]//255))
-    y = int(round(color[1]//255))
-    z = int(round(color[2]//255))
+    x = int(round(color[0]/255))
+    y = int(round(color[1]/255))
+    z = int(round(color[2]/255))
     g[n**2 * x + n * y + z] += 1/len(set2)
 
 
