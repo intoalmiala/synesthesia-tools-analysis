@@ -41,7 +41,7 @@ colors = ["black", "blue", "lime", "cyan", "red", "magenta", "yellow", "white"]
 ylims = [-0.5, 0.5]
 
 fig, ax = plt.subplots()
-ax.bar(range(len(A)), A-B, color=colors, tick_label=color_names, edgecolor="black")
+ax.bar(range(len(A)), B-A, color=colors, tick_label=color_names, edgecolor="black")
 ax.set_title(input("Title for difference plot: "))
 ax.set_ylim(ylims)
 ax.axhline(0, color="black", linewidth=1)
